@@ -99,7 +99,7 @@ theme.json 的关键字段：
 ## 开发
 
 ```bash
-set CORTICO_APP_DIR=<Coopanion 安装目录>\\resources\\app
+set CORTICO_APP_DIR=<Coopanion 安装目录>\resources\app
 npm run check     # 用 Coopanion 自带的 dry-mount 检查定义、工具、面板与 describe
 npm run describe  # 生成 describe.json
 npm test          # 流程/主题/服务端单元测试
@@ -112,6 +112,7 @@ npm test          # 流程/主题/服务端单元测试
 ## License
 
 MIT。原项目「大肥鱼的小屋」© 2026 jiuchai；Coopanion 适配部分 © 2026 AgSilveryin，同样以 MIT 发布。版权与许可声明见 LICENSE。
+
 ## 致谢
 
 原项目「大肥鱼的小屋」（AstrBot 插件）由 jiuchai 创作，主题包格式、画布概念与壁纸页来自那里（MIT）。Coopanion 适配层的运行时、面板与发布打包由 AgSilveryin 重写。
