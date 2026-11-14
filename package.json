@@ -1,0 +1,83 @@
+{
+  "name": "cortico-world-fish-house",
+  "version": "0.1.0",
+  "description": "大肥鱼的小屋：主题画布驱动的视频壁纸 World，给 Coopanion 的桌面场景加一层会跟着回合走的动画。 / Fish House: a canvas-driven video wallpaper World for Coopanion.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "author": "AgSilveryin",
+  "license": "MIT",
+  "homepage": "https://github.com/AgSilveryin/cortico-world-fish-house",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgSilveryin/cortico-world-fish-house.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AgSilveryin/cortico-world-fish-house/issues"
+  },
+  "keywords": [
+    "cortico-world",
+    "cortico",
+    "coopanion",
+    "wallpaper",
+    "video",
+    "canvas",
+    "desktop-pet",
+    "obs"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "src",
+    "dist",
+    "web",
+    "assets",
+    "describe.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "cortico": {
+    "kind": "world",
+    "api": 6,
+    "displayName": "大肥鱼的小屋",
+    "icon": "assets/icon.png",
+    "describe": "describe.json",
+    "webUiClient": "dist/webui.js",
+    "webUiStyle": "dist/webui.css",
+    "tags": [
+      "video",
+      "browser",
+      "companion"
+    ],
+    "locales": {
+      "zh": {
+        "displayName": "大肥鱼的小屋",
+        "description": "主题画布驱动的视频壁纸：每个节点是一段视频，连线决定 Coopanion 收到消息、思考、干活时怎么演；素材库、叠化、底部气泡和独立壁纸页都在。自带默认主题，导入 .zip 主题包即可换一套。"
+      },
+      "en": {
+        "displayName": "Fish House",
+        "description": "A canvas-driven video wallpaper: every node is a clip and the edges decide how Coopanion moves through messages, thinking and tool work. Includes a material library, crossfades, a bottom bubble and a standalone wallpaper page; the default theme ships in the package and more themes import as .zip."
+      }
+    },
+    "screenshots": [
+      "assets/screenshot-1.png"
+    ]
+  },
+  "scripts": {
+    "check": "node scripts/check.mjs",
+    "describe": "node scripts/describe.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "contributors": [
+    {
+      "name": "jiuchai"
+    }
+  ]
+}
